@@ -50,10 +50,10 @@ geoerode = function(marker, reference, element){
 #' @details
 #'if oc is set to \code{\link{open}}, then \code{\link{geodilate}} shall be used as the working function;
 #'if oc is set to \code{\link{close}}, then \code{\link{geoerode}} shall be used as the working function;
-#' 
+#'if oc is set to NULL, a marker image shall be indicated in the option 'marker'
 #' @export
 #'
-MorphRecons = function(f,marker, reference, element,oc=NULL){    
+MorphRecons = function(f,reference,element,marker=NULL,oc=NULL){    
   
   if(!is.null(oc)){
     if(oc=='open'){
@@ -61,10 +61,15 @@ MorphRecons = function(f,marker, reference, element,oc=NULL){
     }else{
       marker=dilate(reference,element)
     }
+  }else{
+    if(!is.null(marker)){
+      recons = marker
+    }else{
+      print("Please indicate a marker image, or set oc to 'open' or 'close'")
+    }
   }
 
-  recons = marker
-  result = reference
+    result = reference
   
   while(any(recons != result)){
     result = recons
