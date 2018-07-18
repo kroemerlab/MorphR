@@ -57,10 +57,11 @@ MorphRecons = function(f,reference,element,marker=NULL,oc=NULL){
   
   if(!is.null(oc)){
     if(oc=='open'){
-    marker=erode(reference,element)
+      marker=erode(reference,element)
     }else{
       marker=dilate(reference,element)
     }
+    recons = marker
   }else{
     if(!is.null(marker)){
       recons = marker
