@@ -4,16 +4,16 @@
 \alias{MorphRecons}
 \title{Geomorphometric operations : reconstruction}
 \usage{
-MorphRecons(f, marker, reference, element, oc = NULL)
+MorphRecons(f, reference, element, marker = NULL, oc = NULL)
 }
 \arguments{
 \item{f}{the function to be applied}
 
-\item{marker}{An image matrix marker}
-
 \item{reference}{An image matrix reference}
 
 \item{element}{Structural element}
+
+\item{marker}{An image matrix marker}
 
 \item{oc}{Can be NULL, 'open' or 'close'; default is NULL}
 }
@@ -26,6 +26,7 @@ Image reconstruction after geomorphometric operation
 \details{
 if oc is set to \code{\link{open}}, then \code{\link{geodilate}} shall be used as the working function;
 if oc is set to \code{\link{close}}, then \code{\link{geoerode}} shall be used as the working function;
+if oc is set to NULL, a marker image shall be indicated in the option 'marker'
 }
 \author{
 Marion Leduc, \email{marion.leduc@gustaveroussy.fr}
