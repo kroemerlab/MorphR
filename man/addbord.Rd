@@ -16,7 +16,7 @@ addbord(mat, int = 1, size = 1, outside = T)
 \item{outside}{Shall borders be drawn outside or inside the matrix ?}
 }
 \value{
-A mtrix with added borders
+A matrix with added borders
 }
 \description{
 Add borders to matrix

@@ -15,8 +15,6 @@ geodilate = function(marker, reference, element){
   return(pmin(dilate(marker, element), reference))
 }
 
-
-
 #' Geomorphometric operations : geoerosion
 #'
 #' Geoerosion

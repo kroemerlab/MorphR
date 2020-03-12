@@ -6,7 +6,7 @@
 #' @param int The intger to fill the matrix with
 #' @param size Border thickness 
 #' @param outside Shall borders be drawn outside or inside the matrix ?
-#' @return A mtrix with added borders 
+#' @return A matrix with added borders 
 #' @author Allan Sauvat, \email{allan.sauvat@gustaveroussy.fr}
 #'
 #' @export
