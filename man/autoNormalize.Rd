@@ -4,8 +4,14 @@
 \alias{autoNormalize}
 \title{Image normalization with automated histogram adjustment}
 \usage{
-autoNormalize(x, inputRange, autoRange = T, RangeOnly = F,
-  separate = T, step = 5 * 10^-3)
+autoNormalize(
+  x,
+  inputRange,
+  autoRange = T,
+  RangeOnly = F,
+  separate = T,
+  step = 5 * 10^-3
+)
 }
 \arguments{
 \item{x}{An array, or a 2D/3D matrix}
