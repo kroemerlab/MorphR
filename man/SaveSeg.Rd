@@ -4,10 +4,12 @@
 \alias{SaveSeg}
 \title{Save mask using rle algorithm}
 \usage{
-SaveSeg(Mask, ExportDir, FileName)
+SaveSeg(Mask, ExportDir, FileName, asRDS = FALSE)
 }
 \arguments{
 \item{Mask}{The image mask to be saved}
+
+\item{asRDS}{Shall file be saved as RDS?}
 
 \item{ExportName}{The file saving location}
 }

@@ -1,5 +1,5 @@
 Package: MorphR
-Version: 0.1.4
+Version: 0.1.4.2
 Date: 2017-11-17
 Title: MorphR
 Description: Spatial filtering for images
@@ -7,4 +7,6 @@ Imports: EBImage, S4Vectors
 Author: Allan Sauvat <allan.sauvat@gustaveroussy.fr>
 Maintainer: Allan Sauvat <allan.sauvat@gustaveroussy.fr>
 License: GPL (> 2)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
+NeedsCompilation: no
+Packaged: 2022-08-25 13:46:30 UTC; allan
