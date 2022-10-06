@@ -4,10 +4,12 @@
 \alias{ReadSeg}
 \title{Restore compressed mask}
 \usage{
-ReadSeg(fi)
+ReadSeg(fi, asRDS = FALSE)
 }
 \arguments{
 \item{fi}{File path}
+
+\item{asRDS}{Was file saved as RDS?}
 }
 \value{
 A matrix object
